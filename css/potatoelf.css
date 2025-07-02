@@ -7,3 +7,19 @@ a {
     --post-link-color: rgb(79,108,184);
     --link-hover-color: rgb(79,108,184);
 }
+
+.center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+thead > tr > th {
+    background-color: #181c27;
+}
