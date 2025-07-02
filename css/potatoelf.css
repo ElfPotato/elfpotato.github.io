@@ -1,0 +1,9 @@
+::selection {
+    background-color: rgba(128, 128, 128, 128);
+    text-decoration: underline;
+}
+
+a {
+    --post-link-color: rgb(79,108,184);
+    --link-hover-color: rgb(79,108,184);
+}
