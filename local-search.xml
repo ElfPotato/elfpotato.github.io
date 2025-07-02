@@ -4,11 +4,40 @@
   
   
   <entry>
+    <title>零基础NeoForge1.21.1 Mod开发指南 (1) - 环境搭建</title>
+    <link href="/NF211MOD1/"/>
+    <url>/NF211MOD1/</url>
+    
+    <content type="html"><![CDATA[<h1id="零基础neoforge1.21.1-mod开发指南-1---环境搭建">零基础NeoForge1.21.1Mod开发指南 (1) - 环境搭建</h1><p><a href="/NF211MOD0" class="left">←上一篇</a><a href="/NF211MOD2" class="right">下一篇→</a><br/><br/></p><h2 id="java">Java</h2><p>Java是Minecraft JavaEdition使用的语言，因此，开发Mod需要安装Java并学习Java。</p><p>从<a href="https://www.oracle.com/java/technologies/downloads/#java21">此处</a>下载Java。<div class="note note-warning">            <p>NeoForge需要Java 17及更高版本。本指南使用Java 21.0.7。</p>          </div></p><h2 id="ide">IDE</h2><p>IDE是集成开发环境的简称，是我们编写代码所用的软件。常用的IDE有<a href="https://www.jetbrains.com/idea/">IntellijIDEA</a>（本指南使用），<a href="https://www.eclipse.org/">Eclipse</a>。本指南会介绍IDEA的使用。</p><p>安装IDEA时，可以根据需要选择语言。</p><h2 id="git-github可选">Git &amp; GitHub（可选）</h2><p><a href="https://git-scm.com/">Git</a>是一个版本控制工具，可以将代码托管到例如<a href="https://github.com/">GitHub</a>的托管平台，十分实用。然而在Mod开发中，它们不是必须的，本指南不会详细介绍Git和GitHub。感兴趣的读者可以自行了解。</p><h2 id="mdk">MDK</h2><p>MDK是模组开发工具包的简称，为我们提供开发MinecraftMod的支持。<a href="https://github.com/NeoForgeMDKs/MDK-1.21.1-NeoGradle/">NeoGradle</a>是很常见的NeoForgeMDK。本教程使用NeoGradle。</p><p>打开NeoGradle的<a href="https://github.com/NeoForgeMDKs/MDK-1.21.1-NeoGradle/">GitHub仓库</a>，点击Code中的DownloadZIP可以下载（熟悉Git和GitHub的读者可以使用模板创建仓库后克隆到本地）。解压后，打开IDEA，选择打开（Open），打开解压出来的文件夹。</p><h2 id="构建">构建</h2><p>用IDE打开MDK后，会进行初次构建。构建会消耗十分长的时间，长至2个小时以上。请读者耐心等待，等待期间，可以阅读有关预备知识的篇章，这就是把环境搭建放在指南开始位置的原因。当输出<code>BUILD SUCCESSFUL IN ...</code>说明构建完成。对于IDEA，可以在左侧一栏中点击构建以查看控制台输出。<div class="note note-warning">            <p>在构建时最好不要修改项目中的内容，否则可能会导致构建失败。</p><p>在构建时最好不要暂停，否则可能会导致构建失败。</p>          </div>如果构建失败，可以在命令行运行<code>gradlew build</code>重新构建。对于IDEA，可以在右侧一栏中点击Gradle，运行<code>Tasks &gt; build &gt; build</code>重新构建。</p><p><br/><br/><a href="/NF211MOD0" class="left">←上一篇</a><a href="/NF211MOD2" class="right">下一篇→</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>零基础NeoForge1.21.1 Mod开发指南</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>NeoForge</tag>
+      
+      <tag>Java</tag>
+      
+      <tag>Minecraft</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>零基础NeoForge1.21.1 Mod开发指南 (0) - 绪论</title>
     <link href="/NF211MOD0/"/>
     <url>/NF211MOD0/</url>
     
-    <content type="html"><![CDATA[<h1 id="零基础neoforge1.21.1-mod开发指南-0---绪论">零基础NeoForge1.21.1Mod开发指南 (0) - 绪论</h1><p><a href="/NF211MOD1" class="right">下一篇→</a><br/><br/></p><h2 id="为什么写指南">为什么写指南？</h2><ul><li>翻阅<a href="https://docs.neoforged.net/docs/1.21.1/gettingstarted/">NeoForge官方文档</a>对零基础者并不友好，官方文档为英文，且需要一定Java等基础。</li><li>国内外也有许多指南，但许多不是很详细、系统。</li><li>也为自己开发Mod积累经验。</li></ul><h2 id="内容概要">内容概要</h2><p>指南包括环境搭建、预备知识、开发教程。</p><p>读者可通过<a href="/categories/">分类</a>找到本指南的篇章目录。</p><h2 id="本指南的环境">本指南的环境</h2><table><thead><tr><th style="text-align: center;">项目</th><th style="text-align: center;">版本</th></tr></thead><tbody><tr><td style="text-align: center;">Minecraft</td><td style="text-align: center;">1.21.1</td></tr><tr><td style="text-align: center;">Java</td><td style="text-align: center;">21.0.7</td></tr><tr><td style="text-align: center;">NeoForge</td><td style="text-align: center;">21.1.186</td></tr></tbody></table><p>后续篇章中会提供详细配置教程。</p><h2 id="复制还是敲">复制还是敲？</h2><p>读者阅读本系列时遇到代码，不建议复制粘贴，最好自己敲一遍。一方面，直接复制粘贴可能使读者遗漏细节导致bug，另一方面，直接复制粘贴不利于理解。</p><p><br/><br/><a href="/NF211MOD1" class="right">下一篇→</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="零基础neoforge1.21.1-mod开发指南-0---绪论">零基础NeoForge1.21.1Mod开发指南 (0) - 绪论</h1><p><a href="/NF211MOD1" class="right">下一篇→</a><br/><br/></p><h2 id="为什么写指南">为什么写指南？</h2><ul><li>翻阅<a href="https://docs.neoforged.net/docs/1.21.1/gettingstarted/">NeoForge官方文档</a>对零基础者并不友好，官方文档为英文，且需要一定Java等基础。</li><li>国内外也有许多指南，但许多不是很详细、系统。</li><li>也为自己开发Mod积累经验。</li></ul><h2 id="内容概要">内容概要</h2><p>指南包括环境搭建、预备知识、开发教程。</p><p>读者可通过<a href="/categories/">分类</a>找到本指南的篇章目录。</p><h2 id="本指南的环境">本指南的环境</h2><table><thead><tr><th style="text-align: center;">项目</th><th style="text-align: center;">版本</th></tr></thead><tbody><tr><td style="text-align: center;">Minecraft</td><td style="text-align: center;">1.21.1</td></tr><tr><td style="text-align: center;">Java</td><td style="text-align: center;">21.0.7</td></tr><tr><td style="text-align: center;">NeoForge</td><td style="text-align: center;">21.1.185</td></tr></tbody></table><p>后续篇章中会提供详细配置教程。</p><h2 id="复制还是敲">复制还是敲？</h2><p>读者阅读本系列时遇到代码，不建议复制粘贴，最好自己敲一遍。一方面，直接复制粘贴可能使读者遗漏细节导致bug，另一方面，直接复制粘贴不利于理解。</p><p><br/><br/><a href="/NF211MOD1" class="right">下一篇→</a></p>]]></content>
     
     
     <categories>
