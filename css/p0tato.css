@@ -1,0 +1,14 @@
+#board {
+    padding: 150px 0;
+    margin: 20px 0;
+}
+
+[data-user-color-scheme="dark"] .index-card {
+    background-color: rgba(62, 75, 94, 0.35);
+}
+
+.index-card {
+    background-color: rgba(27, 31, 35, 0.05);
+    padding: 30px;
+    border-radius: 4px;
+}
