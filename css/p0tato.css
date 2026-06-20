@@ -6,6 +6,10 @@ hr {
     box-shadow: none;
 }
 
+.sidebar {
+    margin: 0 50px;
+}
+
 .navbar.top-nav-collapse {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }

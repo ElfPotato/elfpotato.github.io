@@ -21,21 +21,27 @@
   <meta name="author" content="P0taTo">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
-<meta property="og:title" content="123">
-<meta property="og:url" content="https://elfpotato.github.io/123/index.html">
+    <meta name="description" content="原文链接 入门指南 (Getting Started)入门NeoForge (Getting Started with NeoForge)这一部分包含建立NeoForge工作区，运行并测试你的mod的方法。 前置条件 (Prerequisites) 熟悉Java编程语言，特别是Java的面向对象、多态、泛型、函数式编程。 安装Java 25开发工具包（Java 25 Development Kit">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南">
+<meta property="og:url" content="https://elfpotato.github.io/NF1.21-1/index.html">
 <meta property="og:site_name" content="P0taTo">
+<meta property="og:description" content="原文链接 入门指南 (Getting Started)入门NeoForge (Getting Started with NeoForge)这一部分包含建立NeoForge工作区，运行并测试你的mod的方法。 前置条件 (Prerequisites) 熟悉Java编程语言，特别是Java的面向对象、多态、泛型、函数式编程。 安装Java 25开发工具包（Java 25 Development Kit">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-06-20T12:17:04.000Z">
-<meta property="article:modified_time" content="2026-06-20T12:17:04.722Z">
+<meta property="og:image" content="https://elfpotato.github.io/img/post/neoforge.png">
+<meta property="article:published_time" content="2026-06-20T14:21:07.000Z">
+<meta property="article:modified_time" content="2026-06-20T15:31:07.678Z">
 <meta property="article:author" content="P0taTo">
+<meta property="article:tag" content="Minecraft">
+<meta property="article:tag" content="NeoForge">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://elfpotato.github.io/img/post/neoforge.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>123 | P0taTo</title>
+  <title>NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南 | P0taTo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -78,7 +84,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"elfpotato.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":"home"},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":1},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"elfpotato.github.io","root":"/","version":"1.9.9","typing":{"enable":true,"typeSpeed":50,"cursorChar":"_","loop":false,"scope":"home"},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"expand_all":false,"placement":"right","headingSelector":"h1,h2,h3,h4","collapseDepth":3},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"openkounter":{"server_url":"https://open-kounter.mintimate.cn","path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -319,7 +325,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">123</span>
+            <span id="subtitle">NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南</span>
           
         </div>
 
@@ -330,7 +336,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2026-06-20 20:17" pubdate>
+        <time datetime="2026-06-20 22:21" pubdate>
           2026年6月20日 晚上
         </time>
       </span>
@@ -342,7 +348,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          2.2k 字
         
       </span>
     
@@ -395,6 +401,52 @@
 <div class="category-list">
   
   
+    
+    
+    
+    <div class="category row nomargin-x">
+      <a class="category-item 
+          list-group-item category-item-action col-10 col-md-11 col-xm-11" title="NeoForge 1.21-1.21.1 官方文档翻译"
+        id="heading-61e018236ea53ad5f8efa9f453a214f2" role="tab" data-toggle="collapse" href="#collapse-61e018236ea53ad5f8efa9f453a214f2"
+        aria-expanded="true"
+      >
+        NeoForge 1.21-1.21.1 官方文档翻译
+        <span class="list-group-count">(2)</span>
+        <i class="iconfont icon-arrowright"></i>
+      </a>
+      
+      <div class="category-collapse collapse show" id="collapse-61e018236ea53ad5f8efa9f453a214f2"
+           role="tabpanel" aria-labelledby="heading-61e018236ea53ad5f8efa9f453a214f2">
+        
+        
+          
+  <div class="category-post-list">
+    
+    
+      
+      
+        <a href="/NF1.21-0/" title="NeoForge 1.21-1.21.1 官方文档翻译 | 0. 译者序"
+           class="list-group-item list-group-item-action
+           ">
+          <span class="category-post">NeoForge 1.21-1.21.1 官方文档翻译 | 0. 译者序</span>
+        </a>
+      
+    
+      
+      
+        <a href="/NF1.21-1/" title="NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南"
+           class="list-group-item list-group-item-action
+           active">
+          <span class="category-post">NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南</span>
+        </a>
+      
+    
+  </div>
+
+        
+      </div>
+    </div>
+  
 </div>
 
 
@@ -407,12 +459,41 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">123</h1>
+            <h1 id="seo-header">NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南</h1>
             
             
               <div class="markdown-body">
                 
-                
+                <p><a target="_blank" rel="noopener" href="https://docs.neoforged.net/docs/1.21.1/gettingstarted/">原文链接</a></p>
+<h1 id="入门指南-Getting-Started"><a href="#入门指南-Getting-Started" class="headerlink" title="入门指南 (Getting Started)"></a>入门指南 (Getting Started)</h1><h2 id="入门NeoForge-Getting-Started-with-NeoForge"><a href="#入门NeoForge-Getting-Started-with-NeoForge" class="headerlink" title="入门NeoForge (Getting Started with NeoForge)"></a>入门NeoForge (Getting Started with NeoForge)</h2><p>这一部分包含建立NeoForge工作区，运行并测试你的mod的方法。</p>
+<h3 id="前置条件-Prerequisites"><a href="#前置条件-Prerequisites" class="headerlink" title="前置条件 (Prerequisites)"></a>前置条件 (Prerequisites)</h3><ul>
+<li>熟悉Java编程语言，特别是Java的面向对象、多态、泛型、函数式编程。</li>
+<li>安装Java 25开发工具包（Java 25 Development Kit, JDK）和64位Java虚拟机（64-bit Java Virtual Machine, JVM）。NeoForge官方推荐并支持<a target="_blank" rel="noopener" href="https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-25">微软版本的OpenJDK</a>，但是其他JDK也可行。</li>
+</ul>
+<div class="note note-warning">
+            <p>⚠ 注意<br>请确保你在使用64位JVM。可以通过在终端执行<code>java --version</code>来检查。Minecraft不支持32位JVM。</p> 
+          </div>
+<ul>
+<li>熟悉一种集成开发环境（Integrated Development Environment, IDE）。<ul>
+<li>NeoForge官方推荐<a target="_blank" rel="noopener" href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>和<a target="_blank" rel="noopener" href="https://www.eclipse.org/downloads/">Eclipse</a>，这两者都集成了对Gradle的支持。然而，可以使用任何IDE，诸如Netbeans、Visual Studio Code、Vim和Emacs。</li>
+</ul>
+</li>
+<li>熟悉<a target="_blank" rel="noopener" href="https://www.git-scm.com/">Git</a>和<a target="_blank" rel="noopener" href="https://github.com/">GitHub</a>。严格来说这是不必要的，但是会让你的开发过程简单得多。</li>
+</ul>
+<h3 id="建立工作区-Setting-Up-the-Workspace"><a href="#建立工作区-Setting-Up-the-Workspace" class="headerlink" title="建立工作区 (Setting Up the Workspace)"></a>建立工作区 (Setting Up the Workspace)</h3><ul>
+<li>前往<a target="_blank" rel="noopener" href="https://neoforged.net/mod-generator/">Mod生成器</a>网页，输入mod名称（以及可选地，输入mod id），包名，Minecraft版本和Gradle插件（<a target="_blank" rel="noopener" href="https://github.com/neoforged/ModDevGradle">ModDevGradle</a>或者<a target="_blank" rel="noopener" href="https://github.com/neoforged/NeoGradle">NeoGradle</a>），点击“下载Mod项目”（”Download Mod Project”），并解压下载的ZIP文件。</li>
+<li>打开你的IDE并导入该Gradle项目。Eclipse和IntelliJ IDEA会自动为你完成。如果你的IDE不能完成，你也可以通过终端命令<code>gradlew</code>来完成。<ul>
+<li>第一次执行时，Gradle会下载NeoForge的所有依赖（包括Minecraft自身）并反编译它们。这可能花费大量时间（或达到1小时左右，具体时间取决于你的硬件设备和网络状况）。</li>
+<li>每当你对Gradle文件进行修改，都需要重新加载Gradle更改，可以通过IDE的“重新加载Gradle”（”Reload Gradle”）按钮或者通过终端命令<code>gradlew</code>完成。</li>
+</ul>
+</li>
+</ul>
+<h3 id="自定义你的Mod信息-Customizing-Your-Mod-Information"><a href="#自定义你的Mod信息-Customizing-Your-Mod-Information" class="headerlink" title="自定义你的Mod信息 (Customizing Your Mod Information)"></a>自定义你的Mod信息 (Customizing Your Mod Information)</h3><p>你的Mod的许多属性都可以在<code>gradle.properties</code>文件中更改。这些属性包含mod名称和mod版本等。有关更多信息，请参阅<code>gradle.properties</code>文件中的注释，或者<a href="#gradle-properties-gradle-properties"><code>gradle.properties</code>的文档</a>。<br>如果你想要修改构建步骤，你可以编辑<code>build.gradle</code>和<code>settings.gradle</code>文件。NeoForge提供的Gradle插件（<a target="_blank" rel="noopener" href="https://github.com/neoforged/ModDevGradle">ModDevGradle</a>或者<a target="_blank" rel="noopener" href="https://github.com/neoforged/NeoGradle">NeoGradle</a>）提供了若干配置选项，在构建脚本里的注释中解释了其中一些。</p>
+<div class="note note-warning">
+            <p>⚠ 注意<br>只有当你知道自己在做什么的时候才能去编辑<code>build.gradle</code>和<code>settings.gradle</code>文件。所有基本属性都可以通过<code>gradle.properties</code>来设置。</p> 
+          </div>
+
+<h3 id="构建并测试你的Mod-Building-and-Testing-Your-Mod"><a href="#构建并测试你的Mod-Building-and-Testing-Your-Mod" class="headerlink" title="构建并测试你的Mod (Building and Testing Your Mod)"></a>构建并测试你的Mod (Building and Testing Your Mod)</h3><h4 id="服务端测试-Server-Testing"><a href="#服务端测试-Server-Testing" class="headerlink" title="服务端测试 (Server Testing)"></a>服务端测试 (Server Testing)</h4><h2 id="Mod文件-Mod-Files"><a href="#Mod文件-Mod-Files" class="headerlink" title="Mod文件 (Mod Files)"></a>Mod文件 (Mod Files)</h2><h3 id="gradle-properties-gradle-properties"><a href="#gradle-properties-gradle-properties" class="headerlink" title="gradle.properties (gradle.properties)"></a><code>gradle.properties</code> (<code>gradle.properties</code>)</h3><h4 id="Mod-ID-The-Mod-ID"><a href="#Mod-ID-The-Mod-ID" class="headerlink" title="Mod ID (The Mod ID)"></a>Mod ID (The Mod ID)</h4><h4 id="组ID-The-Group-ID"><a href="#组ID-The-Group-ID" class="headerlink" title="组ID (The Group ID)"></a>组ID (The Group ID)</h4><h3 id="neoforge-mods-toml-neoforge-mods-toml"><a href="#neoforge-mods-toml-neoforge-mods-toml" class="headerlink" title="neoforge.mods.toml (neoforge.mods.toml)"></a><code>neoforge.mods.toml</code> (<code>neoforge.mods.toml</code>)</h3><h4 id="非特定于Mod的属性-Non-Mod-Specific-Properties"><a href="#非特定于Mod的属性-Non-Mod-Specific-Properties" class="headerlink" title="非特定于Mod的属性 (Non-Mod-Specific Properties)"></a>非特定于Mod的属性 (Non-Mod-Specific Properties)</h4><h4 id="特定于Mod的属性-Mod-Specific-Properties"><a href="#特定于Mod的属性-Mod-Specific-Properties" class="headerlink" title="特定于Mod的属性 (Mod-Specific Properties)"></a>特定于Mod的属性 (Mod-Specific Properties)</h4><h4 id="特定于访问变换器的属性-Access-Transformer-Specific-Properties"><a href="#特定于访问变换器的属性-Access-Transformer-Specific-Properties" class="headerlink" title="特定于访问变换器的属性 (Access Transformer-Specific Properties)"></a>特定于访问变换器的属性 (Access Transformer-Specific Properties)</h4><h4 id="Mixin配置属性-Mixin-Configuration-Properties"><a href="#Mixin配置属性-Mixin-Configuration-Properties" class="headerlink" title="Mixin配置属性 (Mixin Configuration Properties)"></a>Mixin配置属性 (Mixin Configuration Properties)</h4><h4 id="依赖配置-Dependency-Configurations"><a href="#依赖配置-Dependency-Configurations" class="headerlink" title="依赖配置 (Dependency Configurations)"></a>依赖配置 (Dependency Configurations)</h4><h3 id="Mod入口点-Mod-Entrypoints"><a href="#Mod入口点-Mod-Entrypoints" class="headerlink" title="Mod入口点 (Mod Entrypoints)"></a>Mod入口点 (Mod Entrypoints)</h3><h4 id="javafml与-Mod-javafml-and-Mod"><a href="#javafml与-Mod-javafml-and-Mod" class="headerlink" title="javafml与@Mod (javafml and @Mod)"></a><code>javafml</code>与<code>@Mod</code> (<code>javafml</code> and <code>@Mod</code>)</h4><h2 id="结构化你的Mod-Structuring-Your-Mod"><a href="#结构化你的Mod-Structuring-Your-Mod" class="headerlink" title="结构化你的Mod (Structuring Your Mod)"></a>结构化你的Mod (Structuring Your Mod)</h2><h3 id="包-Packaging"><a href="#包-Packaging" class="headerlink" title="包 (Packaging)"></a>包 (Packaging)</h3><h4 id="子包-Sub-package-Organization"><a href="#子包-Sub-package-Organization" class="headerlink" title="子包 (Sub-package Organization)"></a>子包 (Sub-package Organization)</h4><h3 id="类命名规范-Class-Naming-Schemes"><a href="#类命名规范-Class-Naming-Schemes" class="headerlink" title="类命名规范 (Class Naming Schemes)"></a>类命名规范 (Class Naming Schemes)</h3><h3 id="从许多方法中选择一种-Choose-One-Method-from-Many"><a href="#从许多方法中选择一种-Choose-One-Method-from-Many" class="headerlink" title="从许多方法中选择一种 (Choose One Method from Many)"></a>从许多方法中选择一种 (Choose One Method from Many)</h3><h2 id="版本-Versioning"><a href="#版本-Versioning" class="headerlink" title="版本 (Versioning)"></a>版本 (Versioning)</h2><h3 id="Minecraft-Minecraft"><a href="#Minecraft-Minecraft" class="headerlink" title="Minecraft (Minecraft)"></a>Minecraft (Minecraft)</h3><h4 id="早期抢先测试版时期-The-Early-Release-Era"><a href="#早期抢先测试版时期-The-Early-Release-Era" class="headerlink" title="早期抢先测试版时期 (The Early Release Era)"></a>早期抢先测试版时期 (The Early Release Era)</h4><h4 id="大型主版本更新时期-The-Major-Update-Era"><a href="#大型主版本更新时期-The-Major-Update-Era" class="headerlink" title="大型主版本更新时期  (The Major Update Era)"></a>大型主版本更新时期  (The Major Update Era)</h4><h4 id="小更新时期-The-Game-Drop-Era"><a href="#小更新时期-The-Game-Drop-Era" class="headerlink" title="小更新时期 (The Game Drop Era)"></a>小更新时期 (The Game Drop Era)</h4><h3 id="NeoForge-NeoForge"><a href="#NeoForge-NeoForge" class="headerlink" title="NeoForge (NeoForge)"></a>NeoForge (NeoForge)</h3><h3 id="Mods-Mods"><a href="#Mods-Mods" class="headerlink" title="Mods (Mods)"></a>Mods (Mods)</h3><h4 id="语义化版本-Semantic-Versioning"><a href="#语义化版本-Semantic-Versioning" class="headerlink" title="语义化版本 (Semantic Versioning)"></a>语义化版本 (Semantic Versioning)</h4><h4 id="“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver"><a href="#“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver" class="headerlink" title="“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)"></a>“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)</h4><h4 id="Alpha版本、Beta版本、正式版本-Alpha-Beta-Release"><a href="#Alpha版本、Beta版本、正式版本-Alpha-Beta-Release" class="headerlink" title="Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)"></a>Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)</h4><h4 id="含有Minecraft版本-Including-the-Minecraft-Version"><a href="#含有Minecraft版本-Including-the-Minecraft-Version" class="headerlink" title="含有Minecraft版本 (Including the Minecraft Version)"></a>含有Minecraft版本 (Including the Minecraft Version)</h4><h4 id="含有Mod加载器-Including-the-Mod-Loader"><a href="#含有Mod加载器-Including-the-Mod-Loader" class="headerlink" title="含有Mod加载器 (Including the Mod Loader)"></a>含有Mod加载器 (Including the Mod Loader)</h4><h4 id="关于Maven的说明-A-Note-on-Maven"><a href="#关于Maven的说明-A-Note-on-Maven" class="headerlink" title="关于Maven的说明 (A Note on Maven)"></a>关于Maven的说明 (A Note on Maven)</h4>
                 
               </div>
             
@@ -420,6 +501,36 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/NeoForge-1-21-1-21-1-%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3%E7%BF%BB%E8%AF%91/" class="category-chain-item">NeoForge 1.21-1.21.1 官方文档翻译</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Minecraft/" class="print-no-link">#Minecraft</a>
+      
+        <a href="/tags/NeoForge/" class="print-no-link">#NeoForge</a>
+      
+    </div>
   
 </div>
 
@@ -429,8 +540,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>123</div>
-      <div>https://elfpotato.github.io/123/</div>
+      <div>NeoForge 1.21-1.21.1 官方文档翻译 | 1. 入门指南</div>
+      <div>https://elfpotato.github.io/NF1.21-1/</div>
     </div>
     <div class="license-meta">
       
@@ -470,6 +581,23 @@
 
 
               
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/NF1.21-0/" title="NeoForge 1.21-1.21.1 官方文档翻译 | 0. 译者序">
+                        <span class="hidden-mobile">NeoForge 1.21-1.21.1 官方文档翻译 | 0. 译者序</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
             </div>
 
             
@@ -485,7 +613,7 @@
         var options = Object.assign(
           {"clientID":"Ov23liPzz9IHZiCZsrwL","clientSecret":"6d4ebd4a2ed1fed8f281cb6208f718120559612a","repo":"p0tato-comments","owner":"ElfPotato","admin":["ElfPotato"],"language":"zh-CN","labels":["Gitalk"],"perPage":10,"pagerDirection":"last","distractionFreeMode":false,"createIssueManually":true,"proxy":"https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token"},
           {
-            id: 'b5f20f3ee62551a262df9ab471b20a3a'
+            id: '180248ddb8af93ddeb3cd44f9451b7aa'
           }
         )
         var gitalk = new Gitalk(options);
