@@ -1,6 +1,13 @@
-#board {
-    padding: 150px 0;
-    margin: 20px 0;
+hr {
+    margin: 30px 0;
+}
+
+.navbar {
+    box-shadow: none;
+}
+
+.navbar.top-nav-collapse {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16);
 }
 
 [data-user-color-scheme="dark"] .index-card {
@@ -12,3 +19,45 @@
     padding: 30px;
     border-radius: 4px;
 }
+
+.gt-ico-tip > .gt-svg {
+    visibility: hidden;
+}
+
+.gt-comment-content, .gt-popup {
+    border-radius: 4px;
+}
+
+[data-user-color-scheme="dark"] .gt-header-preview {
+    background-color: rgba(62, 75, 94, 0.35);
+}
+
+[data-user-color-scheme="dark"] .gt-popup {
+    background-color: rgb(62, 75, 94);
+}
+
+[data-user-color-scheme="dark"] .gt-comment-content {
+    background-color: rgba(62, 75, 94, 0.35) !important;
+}
+
+.gt-user-inner > .gt-ico-arrdown > .gt-svg > svg {
+    fill: var(--text-color);
+}
+
+[data-user-color-scheme="dark"] .gt-ico-github > .gt-svg > svg {
+    fill: white;
+}
+
+[data-user-color-scheme="dark"] .gt-header-textarea {
+    color: white;
+}
+
+[data-user-color-scheme="dark"] .gt-header-textarea {
+    background-color: rgba(62, 75, 94, 0.35);
+}
+
+[data-user-color-scheme="dark"] .gt-header-textarea:hover {
+    background-color: #252d38;
+}
+
+
