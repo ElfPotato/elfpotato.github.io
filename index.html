@@ -22,8 +22,8 @@
   <meta name="keywords" content="">
   
     <meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="https://elfpotato.github.io/categories/index.html">
+<meta property="og:title" content="P0taTo">
+<meta property="og:url" content="https://elfpotato.github.io/index.html">
 <meta property="og:site_name" content="P0taTo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="P0taTo">
@@ -31,7 +31,7 @@
   
   
   
-  <title>分类 | P0taTo</title>
+  <title>P0taTo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -89,7 +89,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 100vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -256,7 +256,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle">分类</span>
+            <span id="subtitle" data-typed-text="Ad astra per aspera."></span>
           
         </div>
 
@@ -282,21 +282,50 @@
     
       <div class="container nopadding-x-md">
         <div id="board"
-          >
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-10 m-auto">
                 
 
+<h1 style="display: none">P0taTo</h1>
+
+  <div class="row mx-auto index-card">
+    
+    
+    <article class="col-12 col-md-12 mx-auto index-info">
+      <h2 class="index-header">
+        
+        <a href="/123/" target="_self">
+          123
+        </a>
+      </h2>
+
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/123/" target="_self">
+        <div>
+          
+        </div>
+      </a>
+
+      <div class="index-btm post-metas">
+        
+          <div class="post-meta mr-3">
+            <i class="iconfont icon-date"></i>
+            <time datetime="2026-06-20 17:56" pubdate>
+              2026-06-20
+            </time>
+          </div>
+        
+        
+        
+      </div>
+    </article>
+  </div>
 
 
 
-
-<div class="category-list">
-  
-  
-</div>
 
 
               </div>
@@ -345,6 +374,23 @@
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        var texts = ["Ad astra per aspera."];
+        var idx = Math.floor(Math.random() * texts.length);
+        typing(texts[idx]);
+      
+    })(window, document);
+  </script>
 
 
 
