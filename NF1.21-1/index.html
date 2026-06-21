@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://elfpotato.github.io/img/post/neoforge.png">
 <meta property="article:published_time" content="2026-06-20T14:21:07.000Z">
-<meta property="article:modified_time" content="2026-06-20T15:31:07.678Z">
+<meta property="article:modified_time" content="2026-06-21T14:44:39.126Z">
 <meta property="article:author" content="P0taTo">
 <meta property="article:tag" content="Minecraft">
 <meta property="article:tag" content="NeoForge">
@@ -348,7 +348,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          7.6k 字
         
       </span>
     
@@ -493,7 +493,230 @@
             <p>⚠ 注意<br>只有当你知道自己在做什么的时候才能去编辑<code>build.gradle</code>和<code>settings.gradle</code>文件。所有基本属性都可以通过<code>gradle.properties</code>来设置。</p> 
           </div>
 
-<h3 id="构建并测试你的Mod-Building-and-Testing-Your-Mod"><a href="#构建并测试你的Mod-Building-and-Testing-Your-Mod" class="headerlink" title="构建并测试你的Mod (Building and Testing Your Mod)"></a>构建并测试你的Mod (Building and Testing Your Mod)</h3><h4 id="服务端测试-Server-Testing"><a href="#服务端测试-Server-Testing" class="headerlink" title="服务端测试 (Server Testing)"></a>服务端测试 (Server Testing)</h4><h2 id="Mod文件-Mod-Files"><a href="#Mod文件-Mod-Files" class="headerlink" title="Mod文件 (Mod Files)"></a>Mod文件 (Mod Files)</h2><h3 id="gradle-properties-gradle-properties"><a href="#gradle-properties-gradle-properties" class="headerlink" title="gradle.properties (gradle.properties)"></a><code>gradle.properties</code> (<code>gradle.properties</code>)</h3><h4 id="Mod-ID-The-Mod-ID"><a href="#Mod-ID-The-Mod-ID" class="headerlink" title="Mod ID (The Mod ID)"></a>Mod ID (The Mod ID)</h4><h4 id="组ID-The-Group-ID"><a href="#组ID-The-Group-ID" class="headerlink" title="组ID (The Group ID)"></a>组ID (The Group ID)</h4><h3 id="neoforge-mods-toml-neoforge-mods-toml"><a href="#neoforge-mods-toml-neoforge-mods-toml" class="headerlink" title="neoforge.mods.toml (neoforge.mods.toml)"></a><code>neoforge.mods.toml</code> (<code>neoforge.mods.toml</code>)</h3><h4 id="非特定于Mod的属性-Non-Mod-Specific-Properties"><a href="#非特定于Mod的属性-Non-Mod-Specific-Properties" class="headerlink" title="非特定于Mod的属性 (Non-Mod-Specific Properties)"></a>非特定于Mod的属性 (Non-Mod-Specific Properties)</h4><h4 id="特定于Mod的属性-Mod-Specific-Properties"><a href="#特定于Mod的属性-Mod-Specific-Properties" class="headerlink" title="特定于Mod的属性 (Mod-Specific Properties)"></a>特定于Mod的属性 (Mod-Specific Properties)</h4><h4 id="特定于访问变换器的属性-Access-Transformer-Specific-Properties"><a href="#特定于访问变换器的属性-Access-Transformer-Specific-Properties" class="headerlink" title="特定于访问变换器的属性 (Access Transformer-Specific Properties)"></a>特定于访问变换器的属性 (Access Transformer-Specific Properties)</h4><h4 id="Mixin配置属性-Mixin-Configuration-Properties"><a href="#Mixin配置属性-Mixin-Configuration-Properties" class="headerlink" title="Mixin配置属性 (Mixin Configuration Properties)"></a>Mixin配置属性 (Mixin Configuration Properties)</h4><h4 id="依赖配置-Dependency-Configurations"><a href="#依赖配置-Dependency-Configurations" class="headerlink" title="依赖配置 (Dependency Configurations)"></a>依赖配置 (Dependency Configurations)</h4><h3 id="Mod入口点-Mod-Entrypoints"><a href="#Mod入口点-Mod-Entrypoints" class="headerlink" title="Mod入口点 (Mod Entrypoints)"></a>Mod入口点 (Mod Entrypoints)</h3><h4 id="javafml与-Mod-javafml-and-Mod"><a href="#javafml与-Mod-javafml-and-Mod" class="headerlink" title="javafml与@Mod (javafml and @Mod)"></a><code>javafml</code>与<code>@Mod</code> (<code>javafml</code> and <code>@Mod</code>)</h4><h2 id="结构化你的Mod-Structuring-Your-Mod"><a href="#结构化你的Mod-Structuring-Your-Mod" class="headerlink" title="结构化你的Mod (Structuring Your Mod)"></a>结构化你的Mod (Structuring Your Mod)</h2><h3 id="包-Packaging"><a href="#包-Packaging" class="headerlink" title="包 (Packaging)"></a>包 (Packaging)</h3><h4 id="子包-Sub-package-Organization"><a href="#子包-Sub-package-Organization" class="headerlink" title="子包 (Sub-package Organization)"></a>子包 (Sub-package Organization)</h4><h3 id="类命名规范-Class-Naming-Schemes"><a href="#类命名规范-Class-Naming-Schemes" class="headerlink" title="类命名规范 (Class Naming Schemes)"></a>类命名规范 (Class Naming Schemes)</h3><h3 id="从许多方法中选择一种-Choose-One-Method-from-Many"><a href="#从许多方法中选择一种-Choose-One-Method-from-Many" class="headerlink" title="从许多方法中选择一种 (Choose One Method from Many)"></a>从许多方法中选择一种 (Choose One Method from Many)</h3><h2 id="版本-Versioning"><a href="#版本-Versioning" class="headerlink" title="版本 (Versioning)"></a>版本 (Versioning)</h2><h3 id="Minecraft-Minecraft"><a href="#Minecraft-Minecraft" class="headerlink" title="Minecraft (Minecraft)"></a>Minecraft (Minecraft)</h3><h4 id="早期抢先测试版时期-The-Early-Release-Era"><a href="#早期抢先测试版时期-The-Early-Release-Era" class="headerlink" title="早期抢先测试版时期 (The Early Release Era)"></a>早期抢先测试版时期 (The Early Release Era)</h4><h4 id="大型主版本更新时期-The-Major-Update-Era"><a href="#大型主版本更新时期-The-Major-Update-Era" class="headerlink" title="大型主版本更新时期  (The Major Update Era)"></a>大型主版本更新时期  (The Major Update Era)</h4><h4 id="小更新时期-The-Game-Drop-Era"><a href="#小更新时期-The-Game-Drop-Era" class="headerlink" title="小更新时期 (The Game Drop Era)"></a>小更新时期 (The Game Drop Era)</h4><h3 id="NeoForge-NeoForge"><a href="#NeoForge-NeoForge" class="headerlink" title="NeoForge (NeoForge)"></a>NeoForge (NeoForge)</h3><h3 id="Mods-Mods"><a href="#Mods-Mods" class="headerlink" title="Mods (Mods)"></a>Mods (Mods)</h3><h4 id="语义化版本-Semantic-Versioning"><a href="#语义化版本-Semantic-Versioning" class="headerlink" title="语义化版本 (Semantic Versioning)"></a>语义化版本 (Semantic Versioning)</h4><h4 id="“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver"><a href="#“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver" class="headerlink" title="“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)"></a>“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)</h4><h4 id="Alpha版本、Beta版本、正式版本-Alpha-Beta-Release"><a href="#Alpha版本、Beta版本、正式版本-Alpha-Beta-Release" class="headerlink" title="Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)"></a>Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)</h4><h4 id="含有Minecraft版本-Including-the-Minecraft-Version"><a href="#含有Minecraft版本-Including-the-Minecraft-Version" class="headerlink" title="含有Minecraft版本 (Including the Minecraft Version)"></a>含有Minecraft版本 (Including the Minecraft Version)</h4><h4 id="含有Mod加载器-Including-the-Mod-Loader"><a href="#含有Mod加载器-Including-the-Mod-Loader" class="headerlink" title="含有Mod加载器 (Including the Mod Loader)"></a>含有Mod加载器 (Including the Mod Loader)</h4><h4 id="关于Maven的说明-A-Note-on-Maven"><a href="#关于Maven的说明-A-Note-on-Maven" class="headerlink" title="关于Maven的说明 (A Note on Maven)"></a>关于Maven的说明 (A Note on Maven)</h4>
+<h3 id="构建并测试你的Mod-Building-and-Testing-Your-Mod"><a href="#构建并测试你的Mod-Building-and-Testing-Your-Mod" class="headerlink" title="构建并测试你的Mod (Building and Testing Your Mod)"></a>构建并测试你的Mod (Building and Testing Your Mod)</h3><p>运行<code>gradlew build</code>来构建你的mod。这将会输出在<code>build/libs</code>中名为<code>&lt;archivesBaseName&gt;-&lt;version&gt;.jar</code>的文件。<code>&lt;archivesBaseName&gt;</code>与<code>&lt;version&gt;</code>分别是<code>build.gradle</code>中设置的属性，其默认值分别是<code>gradle.properties</code>文件中的<code>mod_id</code>和<code>mod_version</code>。如果需要，可以在<code>build.gradle</code>中修改命名。输出的JAR文件可以放置在启用NeoForge的Minecraft目录中的<code>mods</code>文件夹，或者上传到mod发布平台。<br>为了在测试环境中运行你的mod，你可以用IDE的运行配置或者相关的Gradle任务（例如<code>gradlew runClient</code>）。这将会从相应目录启动Minecraft（例如<code>runs/client</code>或者<code>runs/server</code>），同时包含任何指定的源代码集。默认的MDK包含了<code>main</code>源代码集，所以任何写在<code>src/main/java</code>中的代码都会运行。</p>
+<h4 id="服务端测试-Server-Testing"><a href="#服务端测试-Server-Testing" class="headerlink" title="服务端测试 (Server Testing)"></a>服务端测试 (Server Testing)</h4><p>如果你运行一个专用服务器，无论是通过IDE的运行配置还是<code>gradlew runServer</code>，这个服务器都会立刻关闭。你需要通过编辑运行目录中的<code>eula.txt</code>文件来接受Minecraft EULA。<br>一旦接受了EULA，服务器便会加载并在<code>localhost</code>（<code>127.0.0.1</code>）下运行。然而，你仍然不能加入服务器，因为服务器默认开启在线模式并进行身份验证（开发者玩家并不能通过正版验证）。为了修复，再次关闭你的服务器并将<code>server.properties</code>文件中的<code>online-mode</code>属性设置为<code>false</code>。现在，你应该可以连接你的服务器了。</p>
+<div class="note note-info">
+            <p>💡 提示<br>你应该在专用服务器环境中测试你的mod，包括仅客户端的mod，因为它们在服务器中加载时不应该做任何事。</p> 
+          </div>
+
+
+<h2 id="Mod文件-Mod-Files"><a href="#Mod文件-Mod-Files" class="headerlink" title="Mod文件 (Mod Files)"></a>Mod文件 (Mod Files)</h2><p>Mod文件负责确定哪些mod会打包进你的JAR文件、那些信息会显示在“Mods”菜单中以及你的mod应该如何在游戏中加载。</p>
+<h3 id="gradle-properties-gradle-properties"><a href="#gradle-properties-gradle-properties" class="headerlink" title="gradle.properties (gradle.properties)"></a><code>gradle.properties</code> (<code>gradle.properties</code>)</h3><p><code>gradle.properties</code>文件包含你的mod的各种常用的属性，例如mod id和mod版本。在构建时，Gradle读取文件中的这些值并将它们内联到不同位置，例如<code>neoforge.mods.toml</code>文件。这样，你只需要在一个地方更改属性值就可以将它们应用于任何地方。<br><a target="_blank" rel="noopener" href="https://github.com/NeoForgeMDKs/MDK-26.1-NeoGradle/blob/main/gradle.properties">MDK的<code>gradle.properties</code>文件</a>的注释中解释了大多数属性。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>org.gradle.jvmargs</code></td>
+<td>允许你传递额外的JVM参数。最常见的是将其用作给Gradle分配更多&#x2F;更少内存。注意这只针对Gradle，不包括Minecraft。</td>
+<td><code>org.gradle.jvmargs=-Xmx3G</code></td>
+</tr>
+<tr>
+<td><code>org.gradle.daemon</code></td>
+<td>Gradle是否应该在构建时使用守护进程。</td>
+<td><code>org.gradle.daemon=false</code></td>
+</tr>
+<tr>
+<td><code>org.gradle.parallel</code></td>
+<td>Gradle是否应该派生多个JVM进程来并行执行多个项目。</td>
+<td><code>org.gradle.parallel=false</code></td>
+</tr>
+<tr>
+<td><code>org.gradle.caching</code></td>
+<td>Gradle是否应该重新使用先前构建任务的输出。</td>
+<td><code>org.gradle.caching=false</code></td>
+</tr>
+<tr>
+<td><code>org.gradle.configuration-cache</code></td>
+<td>Gradle是否应该是重新使用先前构建使用的构建配置。</td>
+<td><code>org.gradle.configuration-cache=false</code></td>
+</tr>
+<tr>
+<td><code>org.gradle.debug</code></td>
+<td>Gradle是否启用debug模式。Debug模式主要意味着Gradle日志有更丰富的输出。注意这只针对Gradle，不包括Minecraft。</td>
+<td><code>org.gradle.debug=false</code></td>
+</tr>
+<tr>
+<td><code>minecraft_version</code></td>
+<td>你正在使用的Minecraft版本。必须与<code>neo_version</code>相匹配。</td>
+<td><code>minecraft_version=1.20.6</code></td>
+</tr>
+<tr>
+<td><code>minecraft_version_range</code></td>
+<td>这个mod使用的Minecraft版本范围，采用<a target="_blank" rel="noopener" href="https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html">Maven版本范围（Maven Version Range）</a>格式。注意<a href="#Minecraft-Minecraft">快照版本，预发布版与候选正式版</a>不一定被正确排序，因为它们不符合maven版本格式。</td>
+<td><code>minecraft_version_range=[1.20.6, 1.21)</code></td>
+</tr>
+<tr>
+<td><code>neo_version</code></td>
+<td>你正在使用的NeoForge版本。必须与<code>minecraft_version</code>匹配。有关更多信息，请参阅<a href="#NeoForge-NeoForge">NeoForge的版本</a>。</td>
+<td><code>neo_version=20.6.62</code></td>
+</tr>
+<tr>
+<td><code>mod_id</code></td>
+<td>请参阅<a href="#Mod-ID-The-Mod-ID">Mod ID</a>。</td>
+<td><code>mod_id=examplemod</code></td>
+</tr>
+<tr>
+<td><code>mod_name</code></td>
+<td>人类可读的mod显示名字。默认地，mod名称只能在mod列表中看见。然而，像<a target="_blank" rel="noopener" href="https://www.curseforge.com/minecraft/mc-mods/jei">JEI</a>等mod会在物品提示中显示mod名称。</td>
+<td><code>mod_name=Example Mod</code></td>
+</tr>
+<tr>
+<td><code>mod_license</code></td>
+<td>Mod提供的许可证。推荐设置为你的许可证的<a target="_blank" rel="noopener" href="https://spdx.org/licenses/">SPDX标识</a>，以及&#x2F;或者你的许可证的链接。你可以访问<a target="_blank" rel="noopener" href="https://choosealicense.com/">https://choosealicense.com/</a>来选择一个你想要的许可证。</td>
+<td><code>mod_license=MIT</code></td>
+</tr>
+<tr>
+<td><code>mod_version</code></td>
+<td>你的mod的版本（将会在mod列表中显示）。有关更多信息，请参阅<a href="#%E7%89%88%E6%9C%AC-Versioning">版本</a>。</td>
+<td><code>mod_version=1.0</code></td>
+</tr>
+<tr>
+<td><code>mod_group_id</code></td>
+<td>请参阅<a href="#%E7%BB%84ID-The-Group-ID">组ID</a>。</td>
+<td><code>mod_group_id=com.example.examplemod</code></td>
+</tr>
+</tbody></table>
+<h4 id="Mod-ID-The-Mod-ID"><a href="#Mod-ID-The-Mod-ID" class="headerlink" title="Mod ID (The Mod ID)"></a>Mod ID (The Mod ID)</h4><p>Mod id是区分你的mod和其他mod的主要方式。它在各种地方都有广泛使用，例如，它被用作为mod<a href="/NF1.21-2#%E5%BB%B6%E8%BF%9F%E6%B3%A8%E5%86%8C%E8%A1%A8-DefferedRegister">注册表</a>的命名空间。若两个mod拥有相同的id，游戏将不会被加载。<br>因此，你的mod id应该是独一无二且方便记忆的。Mod id只可能包含小写字母、数字和下划线，并且长度在2个和64个字符之间。</p>
+<div class="note note-info">
+            <p>ℹ 注意<br><code>gradle.properties</code>文件中的属性更改会自动应用在任何地方，除了你的mod主类中的<u><a href="#javafml%E4%B8%8E-Mod-javafml-and-Mod"><code>@Mod</code>注解</a></u>。你需要手动匹配那里的值。</p> 
+          </div>
+
+<h4 id="组ID-The-Group-ID"><a href="#组ID-The-Group-ID" class="headerlink" title="组ID (The Group ID)"></a>组ID (The Group ID)</h4><p>正确设置<code>build.gradle</code>中的<code>group</code>属性是一个好习惯，虽然只有你打算在maven发布你的mod时它才是必要的。这是通过修改<code>gradle.properties</code>中的<code>mod_group_id</code>属性来完成的。<br>组ID应该设置为你的顶级包名。有关更多信息，请参阅<a href="#%E5%8C%85-Packaging">包</a>。</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs PROPERTIES"><span class="hljs-comment"># 在你的gradle.properties文件中</span><br><span class="hljs-attr">mod_group_id</span>=<span class="hljs-string">com.example</span><br></code></pre></td></tr></table></figure>
+<p><code>src/main/java</code>中的包现在也应该符合这个结构，并用一个子包来代表mod id。</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs TEXT">com<br>- example (组ID指定的顶级包)<br>    - mymod (mod id)<br>        - MyMod.java (由ExampleMod.java重命名而来)<br></code></pre></td></tr></table></figure>
+
+<h3 id="neoforge-mods-toml-neoforge-mods-toml"><a href="#neoforge-mods-toml-neoforge-mods-toml" class="headerlink" title="neoforge.mods.toml (neoforge.mods.toml)"></a><code>neoforge.mods.toml</code> (<code>neoforge.mods.toml</code>)</h3><p><code>src/main/resources/META-INF/neoforge.mods.toml</code>文件是<a target="_blank" rel="noopener" href="https://toml.io/cn/">TOML</a>格式的，定义了你的mod的元数据，也包含了你的mod应该怎样被游戏加载和“Mods”菜单中怎样显示你的mod信息。<a target="_blank" rel="noopener" href="https://github.com/NeoForgeMDKs/MDK-26.1-NeoGradle/blob/main/src/main/resources/META-INF/neoforge.mods.toml">MDK提供的<code>neoforge.mods.toml</code>文件</a>中的注释解释了每个条目，在这里将更详细地解释它们。<br><code>neoforge.mods.toml</code>可以被分为三个部分：非特定于Mod的属性（与mod文件绑定）、mod属性（包含每个mod）和依赖配置（包含每一个mod的依赖）。一些<code>neoforge.mods.toml</code>是必要的，它们需要一个特定的值，否则会产生错误。</p>
+<div class="note note-info">
+            <p>ℹ 注意<br>在默认的MDK中，Gradle将这个文件中的不同属性都替换为<code>gradle.properties</code>文件中指定的属性。例如，<code>license=&quot;${mod_license}&quot;</code>意味着用<code>gradle.properties</code>中的<code>mod_license</code>属性来替换<code>license</code>字段。被替换的值应该在<code>gradle.properties</code>中更改，而不是在<code>neoforge.mods.toml</code>中。</p> 
+          </div>
+
+<h4 id="非特定于Mod的属性-Non-Mod-Specific-Properties"><a href="#非特定于Mod的属性-Non-Mod-Specific-Properties" class="headerlink" title="非特定于Mod的属性 (Non-Mod-Specific Properties)"></a>非特定于Mod的属性 (Non-Mod-Specific Properties)</h4><p>非特定于mod的属性是与JAR文件本身相关的属性，说明了怎么加载mod和附加的全局元数据。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>modLoader</code></td>
+<td>string</td>
+<td><code>javafml</code></td>
+<td>Mod使用的语言加载器。可以用来支持其他可选的语言结构（例如使用Kotlin的主文件）和mod入口点的不同形式（例如一个接口或者一个方法）。NeoForge提供了Java加载器<code>javafml</code>。</td>
+<td><code>modLoader=&quot;javafml&quot;</code></td>
+</tr>
+<tr>
+<td><code>loaderVersion</code></td>
+<td>string</td>
+<td><code>&quot;&quot;</code></td>
+<td>可接受的语言加载器版本范围，用<a target="_blank" rel="noopener" href="https://maven.apache.org/enforcer/enforcer-rules/versionRanges.html">Maven版本范围（Maven Version Range）</a>表示。对于<code>javafml</code>，这是当前的版本<code>1</code>。如果没有指定版本，则任何版本的mod加载器都可以使用。</td>
+<td><code>loaderVersion=&quot;[1,)&quot;</code></td>
+</tr>
+<tr>
+<td><code>license</code></td>
+<td>string</td>
+<td><strong>必要的</strong></td>
+<td>JAR中mod提供的许可证。推荐设置为你的许可证的<a target="_blank" rel="noopener" href="https://spdx.org/licenses/">SPDX标识</a>，以及&#x2F;或者你的许可证的链接。你可以访问<a target="_blank" rel="noopener" href="https://choosealicense.com/">https://choosealicense.com/</a>来选择一个你想要的许可证。</td>
+<td><code>license=&quot;MIT&quot;</code></td>
+</tr>
+<tr>
+<td><code>showAsResourcePack</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>当设置为<code>true</code>时，mod的资源将会作为一个独立的资源包（显示在“资源包”菜单），而不是与其他mod的资源结合成“Mod Resources”资源包。</td>
+<td><code>showAsResourcePack=true</code></td>
+</tr>
+<tr>
+<td><code>showAsDataPack</code></td>
+<td>boolean</td>
+<td><code>false</code></td>
+<td>当设置为<code>true</code>时，mod的数据文件将会作为一个独立的数据包（显示在“数据包”菜单），而不是与其他mod的资源结合成“Mod Data”数据包。</td>
+<td><code>showAsDataPack=true</code></td>
+</tr>
+<tr>
+<td><code>services</code></td>
+<td>array</td>
+<td><code>[]</code></td>
+<td>一个包含mod使用的服务的数组。这将纳入NeoForge基于Java平台模块系统（Java Platform Module System）为mod创建的模块的。</td>
+<td><code>services=[&quot;net.neoforged.neoforgespi.language.IModLanguageProvider&quot;]</code></td>
+</tr>
+<tr>
+<td><code>properties</code></td>
+<td>table</td>
+<td><code>&#123;&#125;</code></td>
+<td>一个包含替换属性的表格。它被<code>StringSubstitutor</code>用来替换<code>$&#123;file.&lt;key&gt;&#125;</code>为相应的值。</td>
+<td><code>properties=&#123;&quot;example&quot;=&quot;1.2.3&quot;&#125;</code>（可以通过<code>$&#123;file.example&#125;</code>来引用）</td>
+</tr>
+<tr>
+<td><code>issueTrackerURL</code></td>
+<td>string</td>
+<td><em>空</em></td>
+<td>一个代表了报告mod、追踪mod问题的URL。</td>
+<td><code>issueTrackerURL=&quot;https://github.com/neoforged/NeoForge/issues&quot;</code></td>
+</tr>
+</tbody></table>
+<div class="note note-info">
+            <p>ℹ 注意<br><code>services</code>属性在功能上等效于指定<u><a target="_blank" rel="noopener" href="https://docs.oracle.com/javase/specs/jls/se21/html/jls-7.html#jls-7.7.3">模块中的<code>uses</code>属性</a></u>，用于允许<u><a target="_blank" rel="noopener" href="https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/ServiceLoader.html#load(java.lang.Class)">加载给定类型的服务</a></u>。<br>或者，它可以在<code>src/main/resources/META-INF/services</code>文件夹中的服务文件中定义，这些文件的文件名是完全规范的服务名称，文件内容是要加载的服务（请参阅<u><a target="_blank" rel="noopener" href="https://github.com/XFactHD/AtlasViewer/blob/1.20.2/neoforge/src/main/resources/META-INF/services/xfacthd.atlasviewer.platform.services.IPlatformHelper">AtlasViewer mod提供的范例</a></u>）。</p> 
+          </div>
+
+<h4 id="特定于Mod的属性-Mod-Specific-Properties"><a href="#特定于Mod的属性-Mod-Specific-Properties" class="headerlink" title="特定于Mod的属性 (Mod-Specific Properties)"></a>特定于Mod的属性 (Mod-Specific Properties)</h4><p>特定于mod的属性通过<code>[[mods]]</code>头与特定mod绑定。这是<a target="_blank" rel="noopener" href="https://toml.io/cn/v1.0.0#%E8%A1%A8%E6%95%B0%E7%BB%84">表数组</a>，所有键&#x2F;值属性都会附加在这个mod中，直至到下一个头。</p>
+<figure class="highlight toml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs TOML"><span class="hljs-comment"># examplemod1的属性</span><br><span class="hljs-section">[[mods]]</span><br><span class="hljs-attr">modId</span> = <span class="hljs-string">&quot;examplemod1&quot;</span><br><br><span class="hljs-comment"># examplemod2的属性</span><br><span class="hljs-section">[[mods]]</span><br><span class="hljs-attr">modId</span> = <span class="hljs-string">&quot;examplemod2&quot;</span><br></code></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认</th>
+<th>说明</th>
+<th>举例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>modId</code></td>
+<td>string</td>
+<td><strong>必要的</strong></td>
+<td>请参阅<a href="#Mod-ID-The-Mod-ID">Mod ID</a>。</td>
+<td><code>modId=&quot;examplemod&quot;</code></td>
+</tr>
+<tr>
+<td><code>namespace</code></td>
+<td>string</td>
+<td>value of <code>modId</code></td>
+<td>mod的命名空间。必须符合<a href="#Mod-ID-The-Mod-ID">mod id</a>的格式，但可以额外附加小数点(<code>.</code>)和连接号(<code>-</code>)。目前未被使用。</td>
+<td><code>namespace=&quot;example&quot;</code></td>
+</tr>
+<tr>
+<td><code>version</code></td>
+<td>string</td>
+<td><code>&quot;1&quot;</code></td>
+<td>Mod的版本，最好使用<a target="_blank" rel="noopener" href="https://docs.neoforged.net/docs/gettingstarted/versioning">Maven版本的变体</a>。当设置为<code>$&#123;file.jarVersion&#125;</code>，它将会被JAR清单文件中的<code>Implementation-Version</code>属性的值（在开发环境中显示为<code>0.0NONE</code>）替换。</td>
+<td><code>version=&quot;1.20.2-1.0.0&quot;</code></td>
+</tr>
+<tr>
+<td><code>displayName</code></td>
+<td>string</td>
+<td>value of <code>modId</code></td>
+<td>Mod的显示名称。在屏幕上代表mod（例如，在mod列表中和mod版本不匹配提示中显示）。</td>
+<td><code>displayName=&quot;Example Mod&quot;</code></td>
+</tr>
+<tr>
+<td><code>description</code></td>
+<td>string</td>
+<td><code>&#39;&#39;&#39;MISSING DESCRIPTION&#39;&#39;&#39;</code></td>
+<td>Mod的描述，在mod列表屏幕中显示。推荐使用<a target="_blank" rel="noopener" href="https://toml.io/cn/v1.0.0#%E5%AD%97%E7%AC%A6%E4%B8%B2">多行字符串</a>。这个值也是可翻译的，有关更多信息，请参阅<a href="/NF1.21-7/#%E7%BF%BB%E8%AF%91-Mod-%E5%85%83%E6%95%B0%E6%8D%AE-Translating-Mod-Metadata">翻译Mod元数据</a>。</td>
+<td><code>description=&#39;&#39;&#39;This is an example.&#39;&#39;&#39;</code></td>
+</tr>
+</tbody></table>
+<h4 id="特定于访问变换器的属性-Access-Transformer-Specific-Properties"><a href="#特定于访问变换器的属性-Access-Transformer-Specific-Properties" class="headerlink" title="特定于访问变换器的属性 (Access Transformer-Specific Properties)"></a>特定于访问变换器的属性 (Access Transformer-Specific Properties)</h4><h4 id="Mixin配置属性-Mixin-Configuration-Properties"><a href="#Mixin配置属性-Mixin-Configuration-Properties" class="headerlink" title="Mixin配置属性 (Mixin Configuration Properties)"></a>Mixin配置属性 (Mixin Configuration Properties)</h4><h4 id="依赖配置-Dependency-Configurations"><a href="#依赖配置-Dependency-Configurations" class="headerlink" title="依赖配置 (Dependency Configurations)"></a>依赖配置 (Dependency Configurations)</h4><h3 id="Mod入口点-Mod-Entrypoints"><a href="#Mod入口点-Mod-Entrypoints" class="headerlink" title="Mod入口点 (Mod Entrypoints)"></a>Mod入口点 (Mod Entrypoints)</h3><h4 id="javafml与-Mod-javafml-and-Mod"><a href="#javafml与-Mod-javafml-and-Mod" class="headerlink" title="javafml与@Mod (javafml and @Mod)"></a><code>javafml</code>与<code>@Mod</code> (<code>javafml</code> and <code>@Mod</code>)</h4><h2 id="结构化你的Mod-Structuring-Your-Mod"><a href="#结构化你的Mod-Structuring-Your-Mod" class="headerlink" title="结构化你的Mod (Structuring Your Mod)"></a>结构化你的Mod (Structuring Your Mod)</h2><h3 id="包-Packaging"><a href="#包-Packaging" class="headerlink" title="包 (Packaging)"></a>包 (Packaging)</h3><h4 id="子包-Sub-package-Organization"><a href="#子包-Sub-package-Organization" class="headerlink" title="子包 (Sub-package Organization)"></a>子包 (Sub-package Organization)</h4><h3 id="类命名规范-Class-Naming-Schemes"><a href="#类命名规范-Class-Naming-Schemes" class="headerlink" title="类命名规范 (Class Naming Schemes)"></a>类命名规范 (Class Naming Schemes)</h3><h3 id="从许多方法中选择一种-Choose-One-Method-from-Many"><a href="#从许多方法中选择一种-Choose-One-Method-from-Many" class="headerlink" title="从许多方法中选择一种 (Choose One Method from Many)"></a>从许多方法中选择一种 (Choose One Method from Many)</h3><h2 id="版本-Versioning"><a href="#版本-Versioning" class="headerlink" title="版本 (Versioning)"></a>版本 (Versioning)</h2><h3 id="Minecraft-Minecraft"><a href="#Minecraft-Minecraft" class="headerlink" title="Minecraft (Minecraft)"></a>Minecraft (Minecraft)</h3><h4 id="早期抢先测试版时期-The-Early-Release-Era"><a href="#早期抢先测试版时期-The-Early-Release-Era" class="headerlink" title="早期抢先测试版时期 (The Early Release Era)"></a>早期抢先测试版时期 (The Early Release Era)</h4><h4 id="大型主版本更新时期-The-Major-Update-Era"><a href="#大型主版本更新时期-The-Major-Update-Era" class="headerlink" title="大型主版本更新时期  (The Major Update Era)"></a>大型主版本更新时期  (The Major Update Era)</h4><h4 id="小更新时期-The-Game-Drop-Era"><a href="#小更新时期-The-Game-Drop-Era" class="headerlink" title="小更新时期 (The Game Drop Era)"></a>小更新时期 (The Game Drop Era)</h4><h3 id="NeoForge-NeoForge"><a href="#NeoForge-NeoForge" class="headerlink" title="NeoForge (NeoForge)"></a>NeoForge (NeoForge)</h3><h3 id="Mods-Mods"><a href="#Mods-Mods" class="headerlink" title="Mods (Mods)"></a>Mods (Mods)</h3><h4 id="语义化版本-Semantic-Versioning"><a href="#语义化版本-Semantic-Versioning" class="headerlink" title="语义化版本 (Semantic Versioning)"></a>语义化版本 (Semantic Versioning)</h4><h4 id="“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver"><a href="#“简化版”“扩展版”版本-“Reduced”-and-“Expanded”-Semver" class="headerlink" title="“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)"></a>“简化版”“扩展版”版本 (“Reduced” and “Expanded” Semver)</h4><h4 id="Alpha版本、Beta版本、正式版本-Alpha-Beta-Release"><a href="#Alpha版本、Beta版本、正式版本-Alpha-Beta-Release" class="headerlink" title="Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)"></a>Alpha版本、Beta版本、正式版本 (Alpha, Beta, Release)</h4><h4 id="含有Minecraft版本-Including-the-Minecraft-Version"><a href="#含有Minecraft版本-Including-the-Minecraft-Version" class="headerlink" title="含有Minecraft版本 (Including the Minecraft Version)"></a>含有Minecraft版本 (Including the Minecraft Version)</h4><h4 id="含有Mod加载器-Including-the-Mod-Loader"><a href="#含有Mod加载器-Including-the-Mod-Loader" class="headerlink" title="含有Mod加载器 (Including the Mod Loader)"></a>含有Mod加载器 (Including the Mod Loader)</h4><h4 id="关于Maven的说明-A-Note-on-Maven"><a href="#关于Maven的说明-A-Note-on-Maven" class="headerlink" title="关于Maven的说明 (A Note on Maven)"></a>关于Maven的说明 (A Note on Maven)</h4>
                 
               </div>
             
