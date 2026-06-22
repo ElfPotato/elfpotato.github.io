@@ -30,7 +30,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://elfpotato.github.io/img/post/neoforge.png">
 <meta property="article:published_time" content="2026-06-20T14:21:07.000Z">
-<meta property="article:modified_time" content="2026-06-21T14:44:39.126Z">
+<meta property="article:modified_time" content="2026-06-22T10:38:10.945Z">
 <meta property="article:author" content="P0taTo">
 <meta property="article:tag" content="Minecraft">
 <meta property="article:tag" content="NeoForge">
@@ -496,7 +496,7 @@
 <h3 id="构建并测试你的Mod-Building-and-Testing-Your-Mod"><a href="#构建并测试你的Mod-Building-and-Testing-Your-Mod" class="headerlink" title="构建并测试你的Mod (Building and Testing Your Mod)"></a>构建并测试你的Mod (Building and Testing Your Mod)</h3><p>运行<code>gradlew build</code>来构建你的mod。这将会输出在<code>build/libs</code>中名为<code>&lt;archivesBaseName&gt;-&lt;version&gt;.jar</code>的文件。<code>&lt;archivesBaseName&gt;</code>与<code>&lt;version&gt;</code>分别是<code>build.gradle</code>中设置的属性，其默认值分别是<code>gradle.properties</code>文件中的<code>mod_id</code>和<code>mod_version</code>。如果需要，可以在<code>build.gradle</code>中修改命名。输出的JAR文件可以放置在启用NeoForge的Minecraft目录中的<code>mods</code>文件夹，或者上传到mod发布平台。<br>为了在测试环境中运行你的mod，你可以用IDE的运行配置或者相关的Gradle任务（例如<code>gradlew runClient</code>）。这将会从相应目录启动Minecraft（例如<code>runs/client</code>或者<code>runs/server</code>），同时包含任何指定的源代码集。默认的MDK包含了<code>main</code>源代码集，所以任何写在<code>src/main/java</code>中的代码都会运行。</p>
 <h4 id="服务端测试-Server-Testing"><a href="#服务端测试-Server-Testing" class="headerlink" title="服务端测试 (Server Testing)"></a>服务端测试 (Server Testing)</h4><p>如果你运行一个专用服务器，无论是通过IDE的运行配置还是<code>gradlew runServer</code>，这个服务器都会立刻关闭。你需要通过编辑运行目录中的<code>eula.txt</code>文件来接受Minecraft EULA。<br>一旦接受了EULA，服务器便会加载并在<code>localhost</code>（<code>127.0.0.1</code>）下运行。然而，你仍然不能加入服务器，因为服务器默认开启在线模式并进行身份验证（开发者玩家并不能通过正版验证）。为了修复，再次关闭你的服务器并将<code>server.properties</code>文件中的<code>online-mode</code>属性设置为<code>false</code>。现在，你应该可以连接你的服务器了。</p>
 <div class="note note-info">
-            <p>💡 提示<br>你应该在专用服务器环境中测试你的mod，包括仅客户端的mod，因为它们在服务器中加载时不应该做任何事。</p> 
+            <p>💡 提示<br>你应该也在专用服务器环境中测试你的mod，包括仅客户端的mod，因为它们在服务器中加载时不应该做任何事。</p> 
           </div>
 
 
